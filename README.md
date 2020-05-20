@@ -4,7 +4,7 @@
 
 ![markdownlint](https://github.com/GamePad64/openautocomplete/workflows/markdownlint/badge.svg)
 
-The spec itself: [here](SPECIFICATION.md)
+**Specification: [SPECIFICATION.md](SPECIFICATION.md)**
 
 Nowadays, app developers have to provide autocompletion scripts for their applications for every shell possible by
 themselves. Usually, they provide autocompletions for bash, zsh and fish, and other shells have to support these
