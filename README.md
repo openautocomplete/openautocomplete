@@ -1,6 +1,8 @@
-# OpenAutoComplete :speech_balloon:
+# OpenAutoComplete :pencil:
 
-> CLI autocomplete specification
+> Shell-agnostic, declarative CLI autocomplete specification
+
+![markdownlint](https://github.com/GamePad64/openautocomplete/workflows/markdownlint/badge.svg)
 
 The spec itself: [here](SPECIFICATION.md)
 
@@ -65,3 +67,5 @@ invokes autocompletion (double TAB), the Runtime gets definitions for `python`, 
 available django commands:
 `[check, compilemessages, createcachetable, dbshell, diffsettings, dumpdata, flush, inspectdb, ...]`
 
+### shell-dependent scripting for delegations or enumerations
+Well, to make completions more powerful, some sort of shell-dependent scriptiong would be useful (but discouraged). We should think about safety considerations, though.
