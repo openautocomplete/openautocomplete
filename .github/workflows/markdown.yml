@@ -1,0 +1,16 @@
+name: Lint the specification
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm ci
+    - run: npm run markdownlint SPECIFICATION.md
