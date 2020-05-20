@@ -3,3 +3,4 @@ repos:
     rev: v0.23.1
     hooks:
     - id: markdownlint
+      files: SPECIFICATION.md
