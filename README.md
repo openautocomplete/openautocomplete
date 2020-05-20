@@ -12,6 +12,8 @@ completions (and this task is not easy, if even possible).
 
 We want to have a single way an application could provide its autocompletion specification for the user's shell.
 
+Ready-to-use definition files can be located here: https://github.com/openautocomplete/completions.
+
 ## Basic principles
 
 ### Declarative
