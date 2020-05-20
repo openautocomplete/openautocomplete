@@ -1,4 +1,4 @@
-name: Lint the specification
+name: markdownlint
 
 on:
   push:
