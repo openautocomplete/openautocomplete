@@ -1,6 +1,6 @@
 # OpenAutoComplete Specification
 
-Version 0.2 (development branch)
+Version 0.2.1 (development branch)
 
 The OpenAutoComplete Specification is licensed under
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
@@ -183,8 +183,12 @@ all usage patterns for given command.
 
 ## OAC-enabled app development considerations
 
-For app to be OAC-enabled, it MUST support `--openautocomplete` option for its root command. The app, called with this
-option MUST print a valid OAC document and exit immediately with code 0.
+Autocomplete definitions may be installed into an implementation-defined location, where the **Runtime** could find it.
+Application developer can choose to provide autocomplete definitions inside the application itself.
+
+The `--openautocomplete` option for application root command is the standardized way to do it. The app, called with this
+option MUST print a valid OAC document to stdout and exit immediately with code 0. Currently, there is no way to tell,
+if the app supports `--openautocomplete` flag, so the **Runtime** should maintain a whitelist of supported applications.
 
 The easiest way to make the app OAC-enabled is to use an argument parser, that supports OpenAutoComplete, but there are
 no parsers, that support it so far (you can make one!).
