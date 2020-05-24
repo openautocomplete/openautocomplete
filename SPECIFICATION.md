@@ -1,6 +1,6 @@
 # OpenAutoComplete Specification
 
-Version 0.2.1 (development branch)
+Version 0.3 (development branch)
 
 The OpenAutoComplete Specification is licensed under
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
@@ -52,8 +52,8 @@ object defines a document’s “top level”.
 
 Every OAC document MUST contain the following fields:
 
-- `openautocompletion` object, required: Contains a text field `version` with *major.minor* portion of OAC
-specification. Example: `"openautocompletion": {"version": "0.1"}`
+- `openautocomplete` object, required: Contains a text field `version` with *major.minor* portion of OAC
+specification. Example: `"openautocomplete": {"version": "0.1"}`
 - `components` object, required: Contains `Components` object.
 - `cli` object, required: Contains `Cli` object.
 
