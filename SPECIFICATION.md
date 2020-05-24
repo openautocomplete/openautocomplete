@@ -1,6 +1,6 @@
 # OpenAutoComplete Specification
 
-Version 0.1 (development branch)
+Version 0.2 (development branch)
 
 The OpenAutoComplete Specification is licensed under
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
@@ -151,6 +151,10 @@ Besides the basic pattern fields, this contains:
 
 Besides the basic pattern fields, this contains:
 
+- `separators_long` array[string], default: `["=", " "]`: separators, that should appear after long options.
+- `separators_short` array[string], default: `[" ", ""]`: separators, that should appear after short options.
+- `prefix_long` string, default: "--": prefix for long options.
+- `prefix_short` string, default: "-": prefix for short options.
 - `option` Option, required, reference: Option that this pattern represents
 - `argument` ArgumentPattern: ArgumentPattern, that could be used to parse the argument for the option
 
@@ -171,10 +175,6 @@ Commands and Arguments in GroupPattern have strict order, and Options may follow
 
 - `name` string, required: The command itself, as it appears in the shell. If this field is an array, then the
 **Runtime** SHALL take the first element as a value.
-- `option_separators_long` array[string], default: `["=", " "]`: separators, that should appear after long options.
-- `option_separators_short` array[string], default: `[" ", ""]`: separators, that should appear after short options.
-- `option_prefix_long` string, default: "--": prefix for long options.
-- `option_prefix_short` string, default: "-": prefix for short options.
 - `pattern_groups` array[GroupPattern], required. This array MUST contain at least one GroupPattern. This array contains
 all usage patterns for given command.
 
